@@ -114,17 +114,94 @@ team:appointment:delete     - can delete appointments.
 
 #### Clients
 ```bash
-team:client:view_own - can read own clients.
-team:client:create  - allows user to create new clients.
-team:client:update  - allows user to update existing clients.
-team:client:read    - allows user to read clients belonging to the team.
-team:client:delete  - can delete existing clients.
+team_client:view_own    - is for client user, allows him/she to see what belongs to him/she.
+team:client:view_own    - can read own clients.
+team:client:create      - allows user to create new clients.
+team:client:update      - allows user to update existing clients.
+team:client:read        - allows user to read clients belonging to the team.
+team:client:delete      - can delete existing clients.
 ```
 
 #### Holidays
----
-team:holiday:team:crud - allows user to manage team existing holidays.
-team:holiday:create - allows user to create holidays for team.
-team:holiday:read - can read holidays.
-team:holiday:delete - allows user to delete holidays for members.
----
+```bash
+team:holiday:view_own   - can read holidays belongs to.
+team:holiday:team:crud  - allows user to manage team existing holidays.
+team:holiday:create     - allows user to create holidays for team.
+team:holiday:read       - can read holidays.
+team:holiday:delete     - allows user to delete holidays for members.
+```
+
+#### Medicals
+```bash
+team:medical:view_own   - can read medicals belongs to.
+team:medical:create     - allows user to create medicals.
+team:medical:read       - can read medicals belonging to the team..
+team:medical:approve    - allows user to approve/disapprove other team members medicals in team panel.
+team:medical:delete     - allows user to delete medicals for members.
+```
+
+#### Projects
+```bash
+team:project:view_own   - can read projects belongs to.
+team:project:create     - allows user to create team projects.
+team:project:read       - can read team projects.
+team:project:update     - allows user to update existing projects.
+team:project:delete     - allows user to delete team projects.
+```
+
+#### Reports
+```bash
+team:report:view_own - can generate reports with his own records.
+team:report:create   - can generate reports for all members of team.
+```
+
+#### Charts
+```bash
+team:chart:view_own - can view charts belongs to.
+team:chart:view     - can view charts for all members of team
+```
+
+#### Team Roles
+```bash
+team:role:create - allows user to create team roles.
+team:role:read   - can read team roles.
+team:role:update - allows user to update existing team roles.
+team:role:delete - allows user to delete existing team roles.
+```
+
+#### Tasks
+```bash
+team:task:view_own  - can read tasks belongs to.
+team:task:create    - allows user to create tasks.
+team:task:read      - can read tasks.
+team:task:update    - allows user update existing tasks.
+team:task:delete    - allows user to delete existing tasks.
+```
+
+#### Templates
+```bash
+team:template:view_own  - can read templates belong to.
+team:template:create    - allows user to create templates.
+team:template:read      - can read templates.
+team:template:update    - allows user to update existing templates.
+team:template:delete    - allows user to delete existing templates.
+```
+
+#### Vacations
+```bash
+team:vacation:view_own  - can read vacations belongs to.
+team:vacation:create    - allows user to create vacations.
+team:vacation:read      - can read vacations belonging to the team.
+team:vacation:approve   - allows user to approve/disapprove other team members vacations in team panel.
+team:vacation:delete    - allows user to delete vacations for members.
+```
+
+#### Monthly Quotas
+```bash
+team:monthlyquotas:* - allows user to manage monthly quotas.
+```
+
+#### Lockings
+```bash
+team:locking:* - allows user to manage lockings.
+```
