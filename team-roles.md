@@ -27,33 +27,166 @@ Access rights:
 Top manager is a top role in a team. A team in this case is the entire organization. This non-editable role has a full collection of possible access rights, with an exception of "['*']", which is reserved for team Owner (see the Owner role above). In other words, top manager role is an intrinsic, non-editable role for a general manager in an organization (root manager, owner) with all possible rights in a group all the way down. It is assigned to a trusted person. Accounts in one organization (main team) do not relate to accounts in other organizations (other teams) in any way. This means that a user can have several teams.
 ```bash
 Access rights:
-All default Manager role rights. Plus other.
- - 
- - 
+All default `Manager` role rights. They are described below
+ - team:locking:*
+    #uses for:
+        #-
 ```
 #### Manager
 Manager supervises a group of users, clients, supervisors, and co-managers by having most of access to team data. A person with mostly full set of permissions to a group.
 ```bash
 Access rights:
-All of the Co-manager role permissions plus other.
- - 
- -
+Has all of the `Co-manager` role permissions plus the following.
+ - team:holiday:team:crud
+    #uses for:
+        #-
+ - team:monthlyquotas:*
+    #uses for:
+        #-
+ - team:role:create
+    #uses for:
+        #-
+ - team:role:delete
+    #uses for:
+        #-
+ - team:role:read
+    #uses for:
+        #-
+ - team:role:update
+    #uses for:
+        #-
+ - team:setting:manage_configs
+    #uses for:
+        #-
+ - team:setting:manage_plugins
+    #uses for:
+        #-
+ - team:setting:update
+    #uses for:
+        #-
 ```
 #### Co-manager
 Co-manager performs some of team management tasks such as working with users, projects, tasks, generating reports. This role is useful for big teams. Small teams may do without co-managers. This role is almost like a team manager, but some tasks still require a manager to login. In other words, a co-manager is a person with an extended set of team management functions, who is helping a team manager with most of the work.
 ```bash
 Access rights:
-Has all of the Supervisor role permissions plus other.
- -
- -
+Has all of the `Supervisor` role permissions plus the following.
+ - team:appointment:delete
+    #uses for:
+        #-
+ - team:calendar:override_date_lock
+    #uses for:
+        #-
+ - team:client:create
+    #uses for:
+        #-
+ - team:client:delete
+    #uses for:
+        #-
+ - team:client:update
+    #uses for:
+        #-
+ - team:holiday:create
+    #uses for:
+        #-
+ - team:holiday:delete
+    #uses for:
+        #-
+ - team:medical:delete
+    #uses for:
+        #-
+ - team:project:create
+    #uses for:
+        #-
+ - team:project:delete
+    #uses for:
+        #-
+ - team:project:update
+    #uses for:
+        #-
+ - team:report:create
+    #uses for:
+        #-
+ - team:task:create
+    #uses for:
+        #-
+ - team:task:delete
+    #uses for:
+        #-
+ - team:task:read
+    #uses for:
+        #-
+ - team:task:update
+    #uses for:
+        #-
+ - team:template:create
+    #uses for:
+        #-
+ - team:template:delete
+    #uses for:
+        #-
+ - team:template:read
+    #uses for:
+        #-
+ - team:template:update
+    #uses for:
+        #-
+ - team:user:create
+    #uses for:
+        #-
+ - team:user:delete
+    #uses for:
+        #-
+ - team:user:update
+    #uses for:
+        #-
+ - team:vacation:delete
+    #uses for:
+        #-
 ```
 #### Supervisor
 Supervisors have a small set of management functions in a team. 
 ```bash
 Access rights:
-They have all of default User role permissions plus other.
- -
- -
+They have all of default `Member` role permissions plus the following.
+ - team:appointment:approve
+    #uses for:
+        #-
+ - team:appointment:read
+    #uses for:
+        #-
+ - team:chart:view
+    #uses for:
+        #-
+ - team:client:read
+    #uses for:
+        #-
+ - team:holiday:read
+    #uses for:
+        #-
+ - team:medical:approve
+    #uses for:
+        #-
+ - team:project:read
+    #uses for:
+        #-
+ - team:role:read
+    #uses for:
+        #-
+ - team:task:read
+    #uses for:
+        #-
+ - team:template:read
+    #uses for:
+        #-
+ - team:user:read
+    #uses for:
+        #-
+ - team:users:view
+    #uses for:
+        #-
+ - team:vacation:update
+    #uses for:
+        #-
 ```
 #### Member
 Users work with App by entering data and generating reports for themselves. By default, they do not have any management rights. Primary function for users is data entry and viewing their own data.
@@ -70,34 +203,34 @@ Default Member role access rights:
     #uses for:
         #- view own appointments in team panel
  - team:chart:view_own
-    #user for:
+    #uses for:
         #- view own charts in team panel
  - team:client:view_own
-    #user for:
+    #uses for:
         #- view own clients in team panel
  - team:project:view_own
-    #user for:
+    #uses for:
         #- view own projects in team panel
  - team:report:view_own
-    #user for:
+    #uses for:
         #- generate reports with own records in team panel
  - team:task:view_own
-    #user for:
+    #uses for:
         #- view own tasks in team panel
  - team:template:view_own
-    #user for:
+    #uses for:
         #- view own templates in team panel
  - team:user:view_own
-    #user for:
+    #uses for:
         #- view own informations in team panel members
  - team:calendar:override_own_date_lock
-    #user for:
+    #uses for:
         #- override own date for appointment in calendar
  - team:medical:create
-    #user for:
+    #uses for:
         #- create medicals in team panel
  - team:vacation:create
-    #user for:
+    #uses for:
         #- create vacations in team panel
 ```
 #### Client
@@ -105,8 +238,9 @@ Client role is used with the Clients plugin. When it is enabled, a client user (
 Clients do not have the calendarTrack right but can view what is entered into App by other users and is associated with this client.
 ```bash
 Default client role access rights:
- -
- -
+ - team_client:view_own
+    #uses for:
+        #-
 ```
 <a name="custom-roles"></a>
 ## Custom Roles
