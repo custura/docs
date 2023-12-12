@@ -120,3 +120,11 @@ team:client:update  - allows user to update existing clients.
 team:client:read    - allows user to read clients belonging to the team.
 team:client:delete  - can delete existing clients.
 ```
+
+#### Holidays
+---
+team:holiday:team:crud - allows user to manage team existing holidays.
+team:holiday:create - allows user to create holidays for team.
+team:holiday:read - can read holidays.
+team:holiday:delete - allows user to delete holidays for members.
+---
