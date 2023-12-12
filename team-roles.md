@@ -59,8 +59,46 @@ They have all of default User role permissions plus other.
 Users work with App by entering data and generating reports for themselves. By default, they do not have any management rights. Primary function for users is data entry and viewing their own data.
 ```bash
 Default Member role access rights:
- -
- -
+ - team:calendar:track 
+    #uses for: 
+        #- calendar track
+        #- unschedule appointment in calendar
+        #- update appointment in calendar
+        #- delete appointment in calendar
+        #- change appointment date in calendar
+ - team:appointment:view_own
+    #uses for:
+        #- view own appointments in team panel
+ - team:chart:view_own
+    #user for:
+        #- view own charts in team panel
+ - team:client:view_own
+    #user for:
+        #- view own clients in team panel
+ - team:project:view_own
+    #user for:
+        #- view own projects in team panel
+ - team:report:view_own
+    #user for:
+        #- generate reports with own records in team panel
+ - team:task:view_own
+    #user for:
+        #- view own tasks in team panel
+ - team:template:view_own
+    #user for:
+        #- view own templates in team panel
+ - team:user:view_own
+    #user for:
+        #- view own informations in team panel members
+ - team:calendar:override_own_date_lock
+    #user for:
+        #- override own date for appointment in calendar
+ - team:medical:create
+    #user for:
+        #- create medicals in team panel
+ - team:vacation:create
+    #user for:
+        #- create vacations in team panel
 ```
 #### Client
 Client role is used with the Clients plugin. When it is enabled, a client user (which is external to a team) is a normal user to our platform and can view own data such as reports, charts in your team. 
