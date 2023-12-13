@@ -1,0 +1,3 @@
+# Vacations
+
+- [Introduction](#introduction)

@@ -1,0 +1,3 @@
+# Team Settings
+
+- [Introduction](#introduction)
