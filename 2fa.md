@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Enable](#enable)
+
 <a name="introduction"></a>
 ## Introduction
 
@@ -9,8 +10,9 @@
 
 `Two factor authentication` adds an additional layer of security to the authentication process by making it harder for attackers to gain access to a person's devices or online accounts because, even if the victim's password is hacked, a password alone is not enough to pass the authentication check.
 
-`Two factor authentication` (2FA) option can be enabled by user from Profile Edit page.
+Application security features are accessed by the user using the top-right user profile navigation dropdown menu. Allow the user to enable and manage two-factor authentication for their account.
 
+When a user enables two-factor authentication for their account, they should scan the given QR code using a free TOTP authenticator application such as Google Authenticator. In addition, they should store the listed recovery codes in a secure password manager such as 1Password.
 
 <a name="enable"></a>
 ## Enable Two factor authentication
@@ -21,6 +23,6 @@ All you have to do is press the `Enable` button, then a pop-up will appear where
 
 If you already have the Google Authenticator application on your phone, scan the QR code and enter the code of 6 dignits to complete activation.
 
-![Enable 2FA](https://raw.githubusercontent.com/custura/docs/main/preview/2faQR.jpg)
+![QR 2FA](https://raw.githubusercontent.com/custura/docs/main/preview/2faQR.jpg)
 
 Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost.
