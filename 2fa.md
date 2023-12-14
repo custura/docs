@@ -13,7 +13,7 @@
 
 
 <a name="enable"></a>
-## Enable 2FA
+## Enable Two factor authentication
 
 All you have to do is press the `Enable` button, then a pop-up will appear where you have to confirm the password.
 
