@@ -5,7 +5,6 @@
 <a name="introduction"></a>
 ## Introduction
 
-
 To view `Charts`, you must activate the `Charts` plugin in the `Team settings` section `Plugins`.
 Once you do it, a new tab called Charts appears in the `sidebar menu`. Use it to view various charts. They provide a visual breakdown of how work time is spent on different projects, tasks, or clients.
 
