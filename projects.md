@@ -23,4 +23,4 @@ To manage projects use the Projects tab. Members in roles having the `team:proje
 
 If you use projects and tasks tracking mode you can also assign tasks to projects. Assigning only specific tasks to projects helps to reduce clutter for users when they enter their work time.
 
-![Projects](https://raw.githubusercontent.com/custura/docs/main/preview/project-taskss.jpg)
+![Projects](https://raw.githubusercontent.com/custura/docs/main/preview/project-tasks.jpg)
